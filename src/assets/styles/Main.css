@@ -1,0 +1,43 @@
+:root {
+    --global-body-colour: #ede7e7;
+    --global-font-family: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--global-font-family), serif;
+    background-color: var(--global-body-colour);
+}
+
+.main-contact-button {
+    margin-top: var(--nav-contact-button-margin-top);
+    background: var(--navbar-primary-color);
+    color: #FFFFFF;
+    padding: var(--nav-contact-button-padding);
+    width: var(--nav-contact-button-width);
+    height: var(--nav-contact-button-height);
+    border: none;
+    border-radius: var(--nav-contact-button-border-radius);
+    font-weight: var(--nav-contact-button-font-weight);
+    cursor: pointer;
+    font-size: var(--nav-contact-button-font-size);
+}
+
+.main-white-button {
+    margin-top: var(--nav-contact-button-margin-top);
+    background: #FFFFFF;
+    color: #E8B235;
+    padding: var(--nav-contact-button-padding);
+    width: var(--nav-contact-button-width);
+    height: var(--nav-contact-button-height);
+    border: 2px solid #E8B235;
+    border-radius: var(--nav-contact-button-border-radius);
+    font-weight: var(--nav-contact-button-font-weight);
+    cursor: pointer;
+    font-size: var(--nav-contact-button-font-size);
+}

@@ -1,0 +1,89 @@
+:root {
+    --seo-hero-background-color: #FFF9F4;
+    --seo-hero-title-color: #000000;
+    --seo-hero-highlight-color: #E8B235;
+    --seo-hero-text-color: #000000;
+    --seo-hero-button-background: #FFFFFF;
+    --seo-hero-button-color: #E8B235;
+    --seo-hero-button-border: 2px solid #E8B235;
+    --seo-hero-max-width: 1920px;
+    --seo-hero-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.seo-hero-section {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: url("../../../../assets/images/seo-assets/2ND SECTION BACKGROUND.png");
+    max-width: var(--seo-hero-max-width);
+    height: 894px;
+    box-shadow: var(--seo-hero-box-shadow);
+    overflow: hidden;
+}
+
+.seo-hero-content {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.seo-hero-title {
+    font-size: 60px;
+    color: var(--seo-hero-title-color);
+    position: relative;
+}
+
+.seo-hero-title-underline {
+    width: 391px;
+    height: 5px;
+    background-color: var(--seo-hero-highlight-color);
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+}
+
+.seo-hero-title-bold {
+    color: var(--seo-hero-highlight-color);
+}
+
+.seo-hero-subtitle {
+    font-size: 28px;
+    color: var(--seo-hero-text-color);
+    margin-top: 10px;
+}
+
+.seo-hero-description {
+    font-size: 1rem;
+    color: var(--seo-hero-text-color);
+    margin-top: 20px;
+    line-height: 1.6;
+}
+
+.seo-hero-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: var(--seo-hero-button-background);
+    color: var(--seo-hero-button-color);
+    border: var(--seo-hero-button-border);
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.seo-hero-button:hover {
+    background-color: var(--seo-hero-highlight-color);
+    color: #FFFFFF;
+}
+
+.seo-hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.seo-hero-image img {
+    max-width: 100%;
+}

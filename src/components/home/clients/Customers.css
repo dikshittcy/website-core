@@ -1,0 +1,64 @@
+:root {
+    --primary-color: #E8B235;
+    --secondary-color: #1A1A1A;
+    --background-color: #FFFFFF;
+    --hover-transform: scale(1.1);
+    --heading-font-size: 60px;
+    --heading-margin: 60px auto 50px auto;
+    --logos-gap: 20px;
+    --logos-padding: 0 20px;
+    --logo-width: 286px;
+    --logo-height: auto;
+}
+
+.customers-section {
+    text-align: center;
+    padding: 50px 0;
+    background-color: var(--background-color);
+    width: 100%;
+    max-width: 1920px;
+    height: auto;
+    min-height: 510px;
+    margin: 0 auto;
+}
+
+.customers-section h2 {
+    margin: var(--heading-margin);
+    font-size: var(--heading-font-size);
+    font-weight: bold;
+    color: var(--secondary-color);
+    max-width: 800px;
+}
+
+.customers-section h2 span {
+    color: var(--primary-color);
+}
+
+.customers-logos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--logos-gap);
+    padding: var(--logos-padding);
+}
+
+.customers-logos img {
+    margin: 10px 20px;
+    transition: transform 0.3s ease;
+    max-width: 100%;
+    height: var(--logo-height);
+}
+
+.customers-logos img:hover {
+    transform: var(--hover-transform);
+}
+
+.logo-burger-king,
+.logo-google,
+.logo-apple,
+.logo-mcdonalds,
+.logo-tki {
+    width: var(--logo-width);
+    height: var(--logo-height);
+}

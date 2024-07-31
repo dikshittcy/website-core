@@ -1,0 +1,168 @@
+:root {
+    --navbar-primary-color: #FFBE3C;
+    --navbar-secondary-color: #E8B235;
+    --navbar-background-color: #ffffff;
+    --navbar-text-color: #000000;
+    --navbar-padding: 0 50px;
+    --navbar-max-width: 1920px;
+    --navbar-height: 160px;
+    --navbar-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --navbar-gap: 40px;
+    --nav-logo-max-width: 177px;
+    --nav-logo-height: 108px;
+    --nav-links-margin-top: 45px;
+    --nav-links-gap: 35px;
+    --nav-links-font-weight: 500;
+    --nav-links-font-size: 19px;
+    --nav-contact-button-margin-top: 45px;
+    --nav-contact-button-padding: 10px 25px;
+    --nav-contact-button-width: 230px;
+    --nav-contact-button-height: 58px;
+    --nav-contact-button-border-radius: 12px;
+    --nav-contact-button-font-weight: bold;
+    --nav-contact-button-font-size: 1rem;
+    --dropdown-arrow-font-size: 0.75rem;
+    --dropdown-menu-margin-top: 10px;
+    --dropdown-menu-border-color: #E8B235;
+    --dropdown-menu-box-shadow: 0 0 5px rgba(232, 178, 53, 0.3),
+    0 0 15px rgba(232, 178, 53, 0.2),
+    0 0 30px rgba(232, 178, 53, 0.1);
+    --dropdown-menu-border-radius: 8px;
+    --dropdown-menu-padding: 20px;
+    --dropdown-menu-width: 250px;
+    --dropdown-menu-link-padding: 10px 0;
+    --media-query-max-width: 600px;
+    --navbar-mobile-padding: 0 20px;
+    --navbar-mobile-gap: 20px;
+    --dropdown-menu-mobile-width: 100%;
+}
+
+body {
+    font-family: var(--global-font-family), serif;
+    background-color: var(--navbar-background-color);
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--navbar-padding);
+    background-color: var(--navbar-background-color);
+    max-width: var(--navbar-max-width);
+    height: var(--navbar-height);
+    box-shadow: var(--navbar-box-shadow);
+}
+
+.nav-left, .nav-right {
+    display: flex;
+    align-items: center;
+    gap: var(--navbar-gap);
+}
+
+.nav-logo img {
+    max-width: var(--nav-logo-max-width);
+    height: var(--nav-logo-height);
+}
+
+.nav-links {
+    margin-top: var(--nav-links-margin-top);
+    list-style: none;
+    display: flex;
+    gap: var(--nav-links-gap);
+    padding: 0;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a,
+.nav-item span {
+    text-decoration: none;
+    color: var(--navbar-text-color);
+    font-weight: var(--nav-links-font-weight);
+    font-size: var(--nav-links-font-size);
+    cursor: pointer;
+}
+
+.nav-links a:hover,
+.nav-item span:hover {
+    color: var(--navbar-primary-color);
+}
+
+.nav-contact-button {
+    margin-top: var(--nav-contact-button-margin-top);
+    background: var(--navbar-primary-color);
+    color: #000000;
+    padding: var(--nav-contact-button-padding);
+    width: var(--nav-contact-button-width);
+    height: var(--nav-contact-button-height);
+    border: none;
+    border-radius: var(--nav-contact-button-border-radius);
+    font-weight: var(--nav-contact-button-font-weight);
+    cursor: pointer;
+    font-size: var(--nav-contact-button-font-size);
+}
+
+.nav-contact-button:hover {
+    background: var(--navbar-secondary-color);
+}
+
+.dropdown-arrow {
+    font-size: var(--dropdown-arrow-font-size);
+}
+
+.dropdown-menu {
+    position: absolute;
+    margin-top: var(--dropdown-menu-margin-top);
+    top: 100%;
+    left: 0;
+    background-color: var(--navbar-background-color);
+    border-color: var(--dropdown-menu-border-color);
+    outline: none;
+    box-shadow: var(--dropdown-menu-box-shadow);
+    border-radius: var(--dropdown-menu-border-radius);
+    padding: var(--dropdown-menu-padding);
+    z-index: 1000;
+    width: var(--dropdown-menu-width);
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: var(--dropdown-menu-link-padding);
+    color: var(--navbar-text-color);
+    text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+    color: var(--navbar-primary-color);
+}
+
+/* Media Queries */
+@media (max-width: var(--media-query-max-width)) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: var(--navbar-mobile-padding);
+        height: auto;
+    }
+
+    .nav-left, .nav-right {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--navbar-mobile-gap);
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        gap: var(--navbar-mobile-gap);
+    }
+
+    .dropdown-menu {
+        position: static;
+        width: var(--dropdown-menu-mobile-width);
+    }
+}

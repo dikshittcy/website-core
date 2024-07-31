@@ -1,0 +1,24 @@
+:root {
+    --footer-copyright-bg-color: #A69547;
+    --footer-copyright-text-color: rgba(255, 255, 255, 0.5);
+    --footer-copyright-padding: 10px 0;
+    --footer-copyright-height: 100px;
+    --footer-copyright-margin-top: 30px;
+    --footer-copyright-max-width: 1920px;
+}
+
+.footer-copyright {
+    background-color: var(--footer-copyright-bg-color);
+    text-align: center;
+    padding: var(--footer-copyright-padding);
+    position: relative;
+    max-width: var(--footer-copyright-max-width);
+    height: var(--footer-copyright-height);
+    bottom: 0;
+    left: 0;
+}
+
+.footer-copyright p {
+    margin-top: var(--footer-copyright-margin-top);
+    color: var(--footer-copyright-text-color);
+}

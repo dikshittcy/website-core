@@ -1,0 +1,73 @@
+.seo-hero-container {
+    font-family: Poppins, sans-serif;
+    max-width: 1920px;
+    height: 943px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFDF6;
+}
+
+.seo-hero-image {
+    flex: 1;
+    text-align: center;
+}
+
+.seo-hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.seo-hero-content {
+    flex: 1;
+    padding: 20px;
+    margin-left:70px;
+}
+
+.seo-hero-title {
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.seo-hero-description {
+    max-width: 650px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.seo-hero-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.seo-hero-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.seo-hero-request-demo {
+    background-color: #ffa500;
+    color: #fff;
+}
+
+.seo-hero-request-demo:hover {
+    background-color: #e69500;
+}
+
+.seo-hero-contact-us {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #ffa500;
+}
+
+.seo-hero-contact-us:hover {
+    background-color: #ffa500;
+    color: #fff;
+}

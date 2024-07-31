@@ -1,0 +1,190 @@
+@import url('../../assets/styles/Main.css');
+
+:root {
+    /* Hero Section Colors */
+    --hero-bg-color: #f9f9f9;
+    --hero-primary-color: #070707;
+    --hero-secondary-color: #0844b6;
+    --hero-light-text-color: white;
+    --hero-button-bg-color: #ffffff;
+    --hero-button-text-color: #e8b235;
+    --hero-card-bg-color: white;
+    --hero-card-shadow-color: rgba(0, 0, 0, 0.1);
+
+    /* Service Section Colors */
+    --service-background-primary-color: #EEDB83;
+    --service-background-secondary-color: #FFFFFF;
+
+    /* Hero Section Dimensions */
+    --hero-height: 800px;
+    --hero-content-max-width: 1016px;
+    --hero-content-height: 200px;
+    --hero-content-padding-left: 60px;
+    --hero-content-margin-top: -180px;
+
+    /* Button Styles */
+    --hero-button-padding: 10px 25px;
+    --hero-button-width: 230px;
+    --hero-button-height: 58px;
+    --hero-button-border-radius: 12px;
+    --hero-button-font-size: 1.2rem;
+
+    /* Service Card Dimensions */
+    --service-card-padding: 20px;
+    --service-card-border-radius: 20px;
+    --service-card-shadow: 0 2px 4px var(--hero-card-shadow-color);
+    --service-card-height: 380px;
+    --service-card-img-padding: 30px;
+    --service-card-img-margin-bottom: 20px;
+    --service-card-title-font-size: 1.5rem;
+    --service-button-padding: 12px 22px;
+    --service-button-border-radius: 5px;
+    --service-button-font-weight: bold;
+}
+
+/* Home Section */
+.home {
+    background-color: var(--hero-bg-color);
+    padding: 0;
+    margin: 0;
+}
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 1920px;
+    height: var(--hero-height);
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content {
+    position: absolute;
+    z-index: 2;
+    color: var(--hero-light-text-color);
+    text-align: left;
+    margin-top: var(--hero-content-margin-top);
+    max-width: var(--hero-content-max-width);
+    height: var(--hero-content-height);
+    padding-left: var(--hero-content-padding-left);
+}
+
+.hero-content h1 {
+    color: var(--hero-primary-color);
+    font-size: 95px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    color: var(--hero-primary-color);
+    font-size: 36px;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+
+.hero-button {
+    background-color: var(--navbar-primary-color);
+    color: #000000;
+    padding: var(--hero-button-padding);
+    width: var(--hero-button-width);
+    height: var(--hero-button-height);
+    border: none;
+    border-radius: var(--hero-button-border-radius);
+    cursor: pointer;
+    font-weight: bold;
+    font-size: var(--hero-button-font-size);
+}
+
+.hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Services Section */
+.services-section {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(to top, var(--service-background-primary-color), var(--service-background-secondary-color));
+}
+
+.services-section h2 {
+    font-size: 3.1rem;
+    color: var(--hero-primary-color);
+    margin-bottom: 40px;
+}
+
+.services-section span {
+    font-size: 3.1rem;
+    color: var(--hero-button-text-color);
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 40px;
+    justify-items: center;
+    align-items: center;
+}
+
+.service-card {
+    background-color: var(--hero-card-bg-color);
+    width: 100%;
+    max-width: 500px;
+    padding: var(--service-card-padding);
+    border-radius: var(--service-card-border-radius);
+    box-shadow: var(--service-card-shadow);
+    text-align: center;
+    height: var(--service-card-height);
+}
+
+.service-card img {
+    max-width: 100%;
+    padding: var(--service-card-img-padding);
+    height: auto;
+    margin-bottom: var(--service-card-img-margin-bottom);
+}
+
+.service-card h3 {
+    font-size: var(--service-card-title-font-size);
+    color: var(--hero-primary-color);
+    margin-bottom: 20px;
+}
+
+.service-button {
+    background: linear-gradient(90deg, var(--hero-button-text-color) 100%, var(--hero-button-bg-color) 100%);
+    color: var(--hero-light-text-color);
+    align-items: center;
+    text-align: center;
+    padding: var(--service-button-padding);
+    border: none;
+    border-radius: var(--service-button-border-radius);
+    cursor: pointer;
+    font-weight: var(--service-button-font-weight);
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .services-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 800px) {
+    .services-container {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,132 @@
+:root {
+    --large-circle-background: #FEE9B0;
+    --large-circle-primary-background-colour: #FEE9B0;
+    --large-circle-secondary-background-colour: #FEE9B0;
+    --small-circle-gradient-start: #E8B235;
+    --small-circle-gradient-end: #FFBE3C;
+    --small-circle-width: 353px;
+    --small-circle-height: 353px;
+    --large-circle-width: 650px;
+    --large-circle-height: 650px;
+    --large-circle-font-size: 15px;
+    --circle-diameter: 104px;
+    --circle-background-color: white;
+    --text-color: black;
+    --content-container-max-width: 1920px;
+    --content-container-height: 800px;
+    --content-container-margin: 0 auto;
+    --text-font-size: 64px;
+    --text-font-weight: 600;
+    --text-margin: 71px 52px 72px 53px;
+    --highlight-color: var(--navbar-secondary-color);
+    --detail-margin-left: 20px;
+    --icon-padding: 20px;
+}
+
+.why-choose-us-section {
+    background: url("../../../assets/images/background/why_choose_us_background.png");
+    background-size: cover;
+    text-align: center;
+    position: relative;
+}
+
+.content-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: var(--content-container-max-width);
+    height: var(--content-container-height);
+    margin: var(--content-container-margin);
+    position: relative;
+}
+
+.small-circle {
+    background: linear-gradient(180deg, var(--small-circle-gradient-start) 0%, var(--small-circle-gradient-end) 100%);
+    border-radius: 50%;
+    width: var(--small-circle-width);
+    height: var(--small-circle-height);
+    display: flex;
+    margin: 223px 1447px 224px 320px;
+    position: absolute;
+    left: 0;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.small-circle h2 {
+    color: #FFFFFF;
+    font-family: var(--global-font-family), serif;
+    font-size: var(--text-font-size);
+    font-weight: var(--text-font-weight);
+    margin: var(--text-margin);
+}
+
+.large-circle {
+    background: linear-gradient(180deg, var(--large-circle-primary-background-colour) 0%, var(--large-circle-secondary-background-colour) 100%);
+    color: var(--text-color);
+    border-radius: 50%;
+    width: var(--large-circle-width);
+    height: var(--large-circle-height);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin: 75px 910px 75px 360px;
+}
+
+.large-circle p {
+    font-size: var(--large-circle-font-size);
+    margin-left: 120px;
+    margin-right: 80px;
+    text-align: left;
+    padding: 20px;
+}
+
+.circle-top, .circle-middle, .circle-bottom {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: var(--circle-diameter);
+    height: var(--circle-diameter);
+    border-radius: 50%;
+    background-color: var(--circle-background-color);
+}
+
+.circle-top {
+    top: 155px;
+    left: 890px;
+    z-index: 1;
+}
+
+.circle-middle {
+    top: 348px;
+    left: 944px;
+    z-index: 1;
+}
+
+.circle-bottom {
+    top: 543px;
+    left: 889px;
+    z-index: 1;
+}
+
+.icon {
+    padding: var(--icon-padding);
+    margin-left: 5px;
+}
+
+.detail-top, .detail-middle, .detail-bottom {
+    margin-left: var(--detail-margin-left);
+    text-align: left;
+}
+
+.highlight {
+    color: var(--highlight-color);
+    font-weight: bold;
+}
+
+.detail-top p, .detail-middle p, .detail-bottom p {
+    margin: 0;
+    white-space: nowrap;
+}
