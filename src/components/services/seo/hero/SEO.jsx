@@ -2,6 +2,8 @@ import React from 'react';
 import './SEO.css';
 import SeoHeroImage from '../../../../assets/images/seo-assets/seo_hero_section_image.png'
 import SEO1 from "../seo-second-section/SEO1.jsx";
+import SEO3 from "../seo-third-section/SEO3.jsx";
+import SEO4 from "../seo-fourth-section/SEO4.jsx";
 
 const SEO = () => {
     return (
@@ -29,6 +31,9 @@ const SEO = () => {
 
             </section>
             <SEO1/>
+            <SEO3/>
+            <SEO4/>
+
         </div>
     );
 };

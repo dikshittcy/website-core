@@ -1,10 +1,12 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import './Navbar.css';
 import logoImage from '../../../assets/images/logos/navbar_logo.png';
+import {useNavigate} from 'react-router-dom'; // Import useHistory
 
 const Navbar = () => {
     const [isServicesOpen, setIsServicesOpen] = useState(false);
     const [isCompanyOpen, setIsCompanyOpen] = useState(false);
+    const navigate = useNavigate();
 
     const toggleServicesMenu = () => {
         setIsServicesOpen(!isServicesOpen);
@@ -16,11 +18,15 @@ const Navbar = () => {
         setIsServicesOpen(false);
     };
 
+    const handleLogoClick = () => {
+        navigate('/');
+    };
+
     return (
         <nav className="navbar">
             <div className="nav-left">
-                <div className="nav-logo">
-                    <img src={logoImage} alt="Logo" />
+                <div className="nav-logo" onClick={handleLogoClick}>
+                    <img src={logoImage} alt="Logo"/>
                 </div>
                 <ul className="nav-links">
                     <li className="nav-item">
@@ -54,7 +60,7 @@ const Navbar = () => {
                     <li><a href="/portfolio">Our Portfolio</a></li>
                     <li><a href="/contact-us">Contact us</a></li>
                 </ul>
-                <button className="nav-contact-button">Request a demo</button>
+                <button className="main-contact-button">Request a demo</button>
             </div>
         </nav>
     );

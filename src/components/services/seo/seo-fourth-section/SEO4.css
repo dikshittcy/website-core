@@ -1,0 +1,35 @@
+.seo-last-section-container {
+    font-family: Poppins, sans-serif;
+    max-width: 1920px;
+    height: 386px;
+    background: url("../../../../assets/images/seo-assets/seo_fourth_section_background.png") center no-repeat;
+    background-size: cover;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.seo-last-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.seo-last-section-description-container {
+    max-width: 1581px;
+    height: auto;
+    color: #FFFFFF;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.seo-last-section-description-container p {
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}

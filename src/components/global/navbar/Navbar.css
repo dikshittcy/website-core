@@ -91,25 +91,6 @@ body {
 .nav-item span:hover {
     color: var(--navbar-primary-color);
 }
-
-.nav-contact-button {
-    margin-top: var(--nav-contact-button-margin-top);
-    background: var(--navbar-primary-color);
-    color: #000000;
-    padding: var(--nav-contact-button-padding);
-    width: var(--nav-contact-button-width);
-    height: var(--nav-contact-button-height);
-    border: none;
-    border-radius: var(--nav-contact-button-border-radius);
-    font-weight: var(--nav-contact-button-font-weight);
-    cursor: pointer;
-    font-size: var(--nav-contact-button-font-size);
-}
-
-.nav-contact-button:hover {
-    background: var(--navbar-secondary-color);
-}
-
 .dropdown-arrow {
     font-size: var(--dropdown-arrow-font-size);
 }

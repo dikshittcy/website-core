@@ -5,6 +5,7 @@ import Home from "./components/home/Home";
 import Footer from './components/global/footer/Footer';
 import Copyright from './components/global/copyright/Copyright';
 import SEO from './components/services/seo/hero/SEO.jsx';
+import DigitalMarketing from "./components/services/DigitalMarketing/hero/DigitalMarketing.jsx";
 
 function App() {
     return (
@@ -15,6 +16,7 @@ function App() {
                     <Routes>
                         <Route path="/" element={<Home/>}/>
                         <Route path="/seo" element={<SEO/>}/>
+                        <Route path="/digital-marketing" element={<DigitalMarketing/>}/>
                         <Route path="*" element={<Navigate to="/"/>}/>
                     </Routes>
                 </main>
