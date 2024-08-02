@@ -5,7 +5,9 @@ import Home from "./components/home/Home";
 import Footer from './components/global/footer/Footer';
 import Copyright from './components/global/copyright/Copyright';
 import SEO from './components/services/seo/hero/SEO.jsx';
-import DigitalMarketing from "./components/services/DigitalMarketing/hero/DigitalMarketing.jsx";
+import DigitalMarketing from "./components/services/digital-marketing/hero/DigitalMarketing.jsx";
+import UIUX from "./components/services/uiux/UIUX.jsx";
+
 
 function App() {
     return (
@@ -17,6 +19,7 @@ function App() {
                         <Route path="/" element={<Home/>}/>
                         <Route path="/seo" element={<SEO/>}/>
                         <Route path="/digital-marketing" element={<DigitalMarketing/>}/>
+                        <Route path="/uiux" element={<UIUX/>}/>
                         <Route path="*" element={<Navigate to="/"/>}/>
                     </Routes>
                 </main>

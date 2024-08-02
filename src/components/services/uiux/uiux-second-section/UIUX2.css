@@ -1,0 +1,95 @@
+.uiux2-container {
+    max-width: 1920px;
+    height: 980px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-family: Poppins, sans-serif;
+    background-color: #FFFDF6;
+    position: relative;
+}
+
+.uiux2-content {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1700px;
+    gap: 40px;
+}
+
+.uiux2-text {
+    flex: 2;
+    padding-left: 20px;
+}
+
+.uiux2-section {
+    margin-bottom: 70px;
+}
+
+.uiux2-section h3 {
+    font-size: 32px;
+    color: #E8B235;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.uiux2-section ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.uiux2-section ul li {
+    position: relative;
+    margin-bottom: 10px;
+    font-size: 20px;
+    line-height: 1.5;
+    padding-left: 20px;
+    color: #000000;
+
+}
+
+.uiux2-section ul li::before {
+    content: '•';
+    color: #E8B235;
+    font-size: 24px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.uiux2-image-card {
+    max-width: 596px;
+    height: 696px;
+    top: 74px;
+    right: 1189px;
+    bottom: 60px;
+    left: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.uiux2-card {
+    width: 596px;
+    height: 696px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.uiux2-analysis-image{
+    position: absolute;
+    max-width: 596px;
+    height: 696px;
+    object-fit: cover;
+    top: 59px;
+    right: 1189px;
+    bottom: 60px;
+    left: 90px;
+}
