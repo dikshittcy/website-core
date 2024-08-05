@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../seo/hero/SEO.css';
-import DigitalMarketingHeroImage from '../../../../assets/images/seo-assets/seo_hero_section_image.png'
+import DigitalMarketingHeroImage from '../../../../assets/images/digital-marketing-assets/digital_hero_image.png';
 import DigitalMarketing1 from "../digital-first-section/DigitalMarketing1.jsx";
 import DigitalMarketing2 from "../digital-second-section/DigitalMarketing2.jsx";
 
