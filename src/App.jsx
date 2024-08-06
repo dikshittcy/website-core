@@ -8,6 +8,7 @@ import SEO from './components/services/seo/hero/SEO.jsx';
 import DigitalMarketing from "./components/services/digital-marketing/hero/DigitalMarketing.jsx";
 import UIUX from "./components/services/uiux/hero/UIUX.jsx";
 import AppDevelopment from "./components/services/app-developement/hero/AppDevelopment.jsx";
+import WebDevelopment from "./components/services/web-development/hero/WebDevelopment.jsx";
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
                         <Route path="/digital-marketing" element={<DigitalMarketing/>}/>
                         <Route path="/uiux" element={<UIUX/>}/>
                         <Route path="/app-dev" element={<AppDevelopment/>}/>
+                        <Route path="/web-dev" element={<WebDevelopment/>}/>
                         <Route path="*" element={<Navigate to="/"/>}/>
                     </Routes>
                 </main>
