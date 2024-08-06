@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import './Navbar.css';
 import logoImage from '../../../assets/images/logos/navbar_logo.png';
-import {useNavigate} from 'react-router-dom'; // Import useHistory
+import {useNavigate} from 'react-router-dom';
 
 const Navbar = () => {
     const [isServicesOpen, setIsServicesOpen] = useState(false);

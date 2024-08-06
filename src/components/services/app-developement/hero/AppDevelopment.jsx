@@ -3,6 +3,9 @@ import '../../seo/hero/SEO.css'
 import UIUXHeroImage from '../../../../assets/images/app-development-assets/app_developement_hero_image.png'
 import AppDevelopment1 from "../first-section/AppDevelopment1.jsx";
 import AppDevelopment2 from "../second-section/AppDevelopment2.jsx";
+import AppDevelopment3 from "../third-section/AppDevelopment3.jsx";
+import AppDevelopment4 from "../fourth-section/AppDevelopment4.jsx";
+import AppDevelopment5 from "../fifth-section/AppDevelopment5.jsx";
 
 
 const AppDevelopment = () => {
@@ -29,6 +32,9 @@ const AppDevelopment = () => {
             </section>
             <AppDevelopment1/>
             <AppDevelopment2/>
+            <AppDevelopment3/>
+            <AppDevelopment4/>
+            <AppDevelopment5/>
         </div>
     );
 };
