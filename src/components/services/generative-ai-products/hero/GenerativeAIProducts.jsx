@@ -1,11 +1,10 @@
 import React from 'react';
-import './SEO.css';
+import '../../seo/hero/SEO.css';
 import SeoHeroImage from '../../../../assets/images/seo-assets/seo_hero_section_image.png';
-import SEO1 from "../seo-second-section/SEO1.jsx";
-import SEO3 from "../seo-third-section/SEO3.jsx";
-import SEO4 from "../seo-fourth-section/SEO4.jsx";
+import GenerativeAIProducts2 from "../second-section/GenerativeAIProducts2.jsx";
 
-const SEO = () => {
+
+const GenerativeAIProducts = () => {
     return (
         <div className="seo">
             <section className="seo-hero-container">
@@ -13,7 +12,7 @@ const SEO = () => {
                     <img src={SeoHeroImage} alt="Team working"/>
                 </div>
                 <div className="seo-hero-content">
-                    <h1 className="seo-hero-title">Amazing Works</h1>
+                    <h1 className="seo-hero-title">Generative AI Products</h1>
                     <p className="seo-hero-description">
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
                         the
@@ -30,12 +29,9 @@ const SEO = () => {
                 </div>
 
             </section>
-            <SEO1/>
-            <SEO3/>
-            <SEO4/>
-
+            <GenerativeAIProducts2/>
         </div>
     );
 };
 
-export default SEO;
+export default GenerativeAIProducts;

@@ -2,12 +2,12 @@
     font-family: Poppins, sans-serif;
     max-width: 1920px;
     height: 386px;
-    background: url("../../../../assets/images/seo-assets/seo_fourth_section_background.png") center no-repeat;
-    background-size: cover;
     padding: 10px 0;
     display: flex;
     align-items: center;
     justify-content: center;
+    background: url("../../../../assets/images/seo-assets/seo_fourth_section_background.png") center no-repeat;
+    background-size: cover;
 }
 
 .seo-last-section {
@@ -32,4 +32,10 @@
 .seo-last-section-description-container p {
     color: #FFFFFF;
     margin-bottom: 20px;
+}
+
+/* Override background for GenerativeAIProducts2 component */
+.generative-ai-products2 .seo-last-section-container {
+    background: url("../../../../assets/images/seo-assets/seo_fourth_section_background.png") center no-repeat !important;
+    background-size: cover;
 }
