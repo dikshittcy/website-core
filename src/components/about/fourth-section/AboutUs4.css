@@ -1,0 +1,37 @@
+.about-us4-container {
+    max-width: 1920px;
+    height: 530px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.about-us4-content {
+    margin-left: 545px;
+    margin-right: 533px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.about-us4-text {
+    max-width: 920px;
+    margin: 0 20px;
+    text-align: left;
+    color: #000000;
+}
+
+.about-us4-text p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.highlight {
+    font-weight: bold;
+}

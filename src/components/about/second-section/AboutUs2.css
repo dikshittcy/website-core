@@ -1,0 +1,44 @@
+.about-us2-container {
+    font-family: Poppins, sans-serif;
+    max-width: 1920px;
+    height: 630px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background: linear-gradient(to top, #FFFDF1 0%, #FFFFFF 100%);
+}
+
+.about-us2-image {
+    max-width: 578px;
+    height: 542px;
+    border-radius: 10px;
+}
+
+.about-us2-image img {
+    max-width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.about-us2-content {
+    max-width: 1042px;
+    margin-left: 50px;
+}
+
+.about-us2-content h1 {
+    font-size: 60px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.highlight {
+    color: #E8B235;
+}
+
+.about-us2-description {
+    font-size: 20px;
+    color: #000;
+    margin: 20px 0;
+    line-height: 1.6;
+}

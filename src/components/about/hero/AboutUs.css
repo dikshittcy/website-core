@@ -1,0 +1,39 @@
+.about-us-container {
+    font-family: Poppins, sans-serif;
+    position: relative;
+    max-width: 1920px;
+    height: 921px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 50px;
+}
+
+.about-us-content {
+    max-width: 600px;
+    text-align: left;
+    color: #000000;
+}
+
+.about-us-content h1 {
+    font-size: 60px;
+    font-weight: bold;
+    color: #000000;
+    white-space: nowrap;
+}
+
+.about-us-subtitle {
+    font-size: 36px;
+    font-weight: bold;
+    color: #000000;
+    white-space: nowrap;
+}
+
+.about-us-description {
+    font-size: 20px;
+    color: #000000;
+    margin: 20px 0;
+}
+

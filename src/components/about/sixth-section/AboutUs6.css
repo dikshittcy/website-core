@@ -1,0 +1,49 @@
+.about-us6-container {
+    font-family: 'Poppins', sans-serif;
+    max-width: 1920px;
+    height: 607px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #FFFFFF;
+}
+
+.about-us6-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-us6-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.about-us6-image img {
+    max-width: 704px;
+    height: 608px;
+}
+
+.about-us6-text {
+    flex: 1;
+    margin-left: 20px;
+    text-align: left;
+    max-width: 900px;
+}
+
+.about-us6-text h1 {
+    font-size: 60px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 20px;
+    white-space: nowrap;
+}
+
+.about-us6-text p {
+    color: #000000;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
