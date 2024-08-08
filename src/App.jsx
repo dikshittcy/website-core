@@ -11,6 +11,7 @@ import AppDevelopment from "./components/services/app-developement/hero/AppDevel
 import WebDevelopment from "./components/services/web-development/hero/WebDevelopment.jsx";
 import GenerativeAIProducts from "./components/services/generative-ai-products/hero/GenerativeAIProducts.jsx";
 import AboutUs from "./components/about/hero/AboutUs.jsx";
+import ContactUs from "./components/contact/hero/ContactUs.jsx";
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
                         <Route path="/web-dev" element={<WebDevelopment/>}/>
                         <Route path="/ai-products" element={<GenerativeAIProducts/>}/>
                         <Route path="/about-us" element={<AboutUs/>}/>
+                        <Route path="/contact-us" element={<ContactUs/>}/>
                         <Route path="*" element={<Navigate to="/"/>}/>
                     </Routes>
                 </main>

@@ -1,0 +1,19 @@
+.contact-us1-section {
+    max-width: 1920px;
+    height: 209px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #FFFFFE;
+}
+
+.contact-us1-text {
+    max-width: 1643px;
+    height: 90px;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 1.5;
+    color: #000000;
+}

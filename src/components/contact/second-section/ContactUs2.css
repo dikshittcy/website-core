@@ -1,0 +1,51 @@
+.contact-us2-container {
+    font-family: Poppins, sans-serif;
+    max-width: 1920px;
+    height: 372px;
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+    background-color: #FFFFFE;
+}
+
+.contact-us2-card {
+    background: #FFFDF1;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    width: 500px;
+    height: 251px;
+    margin: 0 25px;
+}
+
+.contact-us2-card h3 {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.contact-us2-card p {
+    font-size: 20px;
+    color: #000000;
+    margin: 5px 0;
+}
+
+.contact-us2-icon {
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.contact-us2-button {
+    background-color: #FFBE3C;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.contact-us2-button:hover {
+    background-color: #deaf3b;
+}
