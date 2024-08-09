@@ -1,0 +1,80 @@
+:root {
+    /* Service Section Colors */
+    --service-background-primary-color: #EEDB83;
+    --service-background-secondary-color: #FFFFFF;
+
+    /* Service Card Dimensions */
+    --service-card-padding: 20px;
+    --service-card-border-radius: 20px;
+    --service-card-shadow: 0 2px 4px var(--hero-card-shadow-color);
+    --service-card-height: 380px;
+    --service-card-img-padding: 30px;
+    --service-card-img-margin-bottom: 20px;
+    --service-card-title-font-size: 1.5rem;
+    --service-button-padding: 12px 22px;
+    --service-button-border-radius: 5px;
+    --service-button-font-weight: bold;
+}
+
+/* Services Section */
+.services-section {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(to top, var(--service-background-primary-color), var(--service-background-secondary-color));
+}
+
+.services-section h2 {
+    font-size: 3.1rem;
+    color: var(--hero-primary-color);
+    margin-bottom: 40px;
+}
+
+.services-section span {
+    font-size: 3.1rem;
+    color: var(--hero-button-text-color);
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 40px;
+    justify-items: center;
+    align-items: center;
+}
+
+.service-card {
+    background-color: var(--hero-card-bg-color);
+    width: 100%;
+    max-width: 500px;
+    padding: var(--service-card-padding);
+    border-radius: var(--service-card-border-radius);
+    box-shadow: var(--service-card-shadow);
+    text-align: center;
+    height: var(--service-card-height);
+}
+
+.service-card img {
+    max-width: 100%;
+    padding: var(--service-card-img-padding);
+    height: auto;
+    margin-bottom: var(--service-card-img-margin-bottom);
+}
+
+.service-card h3 {
+    font-size: var(--service-card-title-font-size);
+    color: var(--hero-primary-color);
+    margin-bottom: 20px;
+}
+
+.service-button {
+    background: linear-gradient(90deg, var(--hero-button-text-color) 100%, var(--hero-button-bg-color) 100%);
+    color: var(--hero-light-text-color);
+    align-items: center;
+    text-align: center;
+    padding: var(--service-button-padding);
+    border: none;
+    border-radius: var(--service-button-border-radius);
+    cursor: pointer;
+    font-weight: var(--service-button-font-weight);
+}
