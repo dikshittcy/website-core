@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Footer.css';
 import phoneIcon from '../../../assets/images/home-assets/telephone_wight.png';
 import mailIcon from '../../../assets/images/home-assets/email_wight.png';
@@ -26,21 +27,22 @@ const Footer = () => {
                 <div className="footer-section-services">
                     <h2>Services</h2>
                     <ul>
-                        <li>Web Development</li>
-                        <li>Web Design</li>
-                        <li>Digital Marketing</li>
-                        <li>Mobile App Development</li>
-                        <li>E-Commerce Development</li>
+                        <li><Link to="/uiux">UI/UX</Link></li>
+                        <li><Link to="/web-dev">Web Development</Link></li>
+                        <li><Link to="/app-dev">App Development</Link></li>
+                        <li><Link to="/digital-marketing">Digital Marketing</Link></li>
+                        <li><Link to="/ai-products">Generative Ai Products</Link></li>
+                        <li><Link to="/seo">Search Engine Optimization</Link></li>
                     </ul>
                 </div>
                 <div className="footer-section-quick-links">
                     <h2>Quick Links</h2>
                     <ul>
-                        <li>Portfolio</li>
-                        <li>Blog</li>
-                        <li>Careers</li>
-                        <li>About Us</li>
-                        <li>Contact Us</li>
+                        <li><Link to="/portfolio">Portfolio</Link></li>
+                        <li><Link to="/blog">Blog</Link></li>
+                        <li><Link to="/careers">Careers</Link></li>
+                        <li><Link to="/about-us">About Us</Link></li>
+                        <li><Link to="/contact-us">Contact Us</Link></li>
                     </ul>
                 </div>
                 <div className="footer-section-contact">
@@ -60,7 +62,7 @@ const Footer = () => {
                         </div>
                         <div>
                             <h3>Mail Us</h3>
-                            <p>@infothecodeyogi.in</p>
+                            <p>info@thecodeyogi.in</p>
                         </div>
                     </div>
                     <div className="footer-contact-item">
@@ -70,11 +72,11 @@ const Footer = () => {
                         <div>
                             <h3>Follow Us</h3>
                             <div className="footer-social-icons">
-                                <span className="footer-social-icon" style={{ backgroundImage: `url(${instagramIcon})` }}></span>
-                                <span className="footer-social-icon" style={{ backgroundImage: `url(${linkedinIcon})` }}></span>
-                                <span className="footer-social-icon" style={{ backgroundImage: `url(${facebookIcon})` }}></span>
-                                <span className="footer-social-icon" style={{ backgroundImage: `url(${pinterestIcon})` }}></span>
-                                <span className="footer-social-icon" style={{ backgroundImage: `url(${twitterIcon})` }}></span>
+                                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="footer-social-icon" style={{ backgroundImage: `url(${instagramIcon})` }}></a>
+                                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="footer-social-icon" style={{ backgroundImage: `url(${linkedinIcon})` }}></a>
+                                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="footer-social-icon" style={{ backgroundImage: `url(${facebookIcon})` }}></a>
+                                <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer" className="footer-social-icon" style={{ backgroundImage: `url(${pinterestIcon})` }}></a>
+                                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="footer-social-icon" style={{ backgroundImage: `url(${twitterIcon})` }}></a>
                             </div>
                         </div>
                     </div>

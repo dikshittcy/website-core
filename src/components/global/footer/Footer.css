@@ -159,6 +159,16 @@ ul li {
     font-size: var(--footer-li-font-size);
 }
 
+ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul li a:hover {
+    /* Optional: adds underline on hover */
+    text-decoration: underline;
+}
+
 p {
     color: var(--footer-p-color);
     line-height: var(--footer-p-line-height);
