@@ -1,0 +1,31 @@
+.careers7-container {
+    max-width: 1920px;
+    height: 150px;
+    text-align: center;
+    font-family: Poppins, sans-serif;
+    background-color: #FBFBFB;
+}
+
+.careers7-container p {
+    padding: 50px;
+    font-size: 30px;
+    color: #000000;
+}
+
+.careers7-container .careers7-link {
+    color: #3465AF;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.careers7-container .careers7-link:hover {
+    text-decoration: underline;
+}
+
+.careers7-container .careers7-link:nth-child(2) {
+    color: #000000;
+}
+
+.careers7-container .careers7-link:nth-child(4) {
+    color: #000000;
+}

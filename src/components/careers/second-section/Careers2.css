@@ -1,0 +1,59 @@
+.careers2-container {
+    font-family: Poppins, sans-serif;
+    max-width: 1920px;
+    height: 456px;
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(to bottom, #FFFFFF 0%, #FFF7D1 100%);
+}
+
+.careers2-heading {
+    font-size: 60px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.careers2-highlight {
+    color: #E8B235;
+}
+
+.careers2-values-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.careers2-value-card {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 396px;
+    height: 206px;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.careers2-value-title {
+    font-size: 24px;
+    color: #000000;
+    margin-bottom: 10px;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
+
+.careers2-value-text {
+    font-size: 20px;
+    color: #000000;
+    line-height: 1.5;
+    white-space: normal;
+    margin-top: 60px;
+}
